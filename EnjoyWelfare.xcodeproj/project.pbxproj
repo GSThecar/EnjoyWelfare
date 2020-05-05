@@ -16,6 +16,11 @@
 		C01D8CAB246159B9008E7151 /* EnjoyWelfareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01D8CAA246159B9008E7151 /* EnjoyWelfareTests.swift */; };
 		C01D8CB6246159B9008E7151 /* EnjoyWelfareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01D8CB5246159B9008E7151 /* EnjoyWelfareUITests.swift */; };
 		C01D8CCD246188DA008E7151 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01D8CCC246188DA008E7151 /* SignInViewController.swift */; };
+		C01D8CD02461A2C1008E7151 /* ServiceForUserManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01D8CCF2461A2C1008E7151 /* ServiceForUserManagement.swift */; };
+		C01D8CD92461A774008E7151 /* UsingURLComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01D8CD82461A774008E7151 /* UsingURLComponents.swift */; };
+		C01D8CDB2461AD37008E7151 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01D8CDA2461AD37008E7151 /* Service.swift */; };
+		C01D8CDF2461AFFD008E7151 /* HoxyMeTooAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01D8CDE2461AFFD008E7151 /* HoxyMeTooAPI.swift */; };
+		C01D8CE22461B34A008E7151 /* NewUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01D8CE12461B34A008E7151 /* NewUser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +57,11 @@
 		C01D8CB7246159B9008E7151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C01D8CC324617857008E7151 /* EnjoyWelfare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EnjoyWelfare.entitlements; sourceTree = "<group>"; };
 		C01D8CCC246188DA008E7151 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		C01D8CCF2461A2C1008E7151 /* ServiceForUserManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceForUserManagement.swift; sourceTree = "<group>"; };
+		C01D8CD82461A774008E7151 /* UsingURLComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingURLComponents.swift; sourceTree = "<group>"; };
+		C01D8CDA2461AD37008E7151 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		C01D8CDE2461AFFD008E7151 /* HoxyMeTooAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoxyMeTooAPI.swift; sourceTree = "<group>"; };
+		C01D8CE12461B34A008E7151 /* NewUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +112,8 @@
 		C01D8C8F246159B2008E7151 /* EnjoyWelfare */ = {
 			isa = PBXGroup;
 			children = (
-				C01D8CCA24618858008E7151 /* ManagementUser */,
+				C01D8CD12461A41F008E7151 /* Common */,
+				C01D8CCA24618858008E7151 /* UserManagement */,
 				C01D8CC324617857008E7151 /* EnjoyWelfare.entitlements */,
 				C01D8C90246159B2008E7151 /* AppDelegate.swift */,
 				C01D8C92246159B2008E7151 /* SceneDelegate.swift */,
@@ -133,12 +144,14 @@
 			path = EnjoyWelfareUITests;
 			sourceTree = "<group>";
 		};
-		C01D8CCA24618858008E7151 /* ManagementUser */ = {
+		C01D8CCA24618858008E7151 /* UserManagement */ = {
 			isa = PBXGroup;
 			children = (
+				C01D8CE02461B32F008E7151 /* UserDTO */,
+				C01D8CCE2461A19D008E7151 /* Service */,
 				C01D8CCB24618888008E7151 /* SignIn */,
 			);
-			path = ManagementUser;
+			path = UserManagement;
 			sourceTree = "<group>";
 		};
 		C01D8CCB24618888008E7151 /* SignIn */ = {
@@ -147,6 +160,32 @@
 				C01D8CCC246188DA008E7151 /* SignInViewController.swift */,
 			);
 			path = SignIn;
+			sourceTree = "<group>";
+		};
+		C01D8CCE2461A19D008E7151 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C01D8CCF2461A2C1008E7151 /* ServiceForUserManagement.swift */,
+				C01D8CDE2461AFFD008E7151 /* HoxyMeTooAPI.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		C01D8CD12461A41F008E7151 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C01D8CD82461A774008E7151 /* UsingURLComponents.swift */,
+				C01D8CDA2461AD37008E7151 /* Service.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C01D8CE02461B32F008E7151 /* UserDTO */ = {
+			isa = PBXGroup;
+			children = (
+				C01D8CE12461B34A008E7151 /* NewUser.swift */,
+			);
+			path = UserDTO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,7 +320,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C01D8CCD246188DA008E7151 /* SignInViewController.swift in Sources */,
+				C01D8CDB2461AD37008E7151 /* Service.swift in Sources */,
 				C01D8C9B246159B2008E7151 /* EnjoyWelfare.xcdatamodeld in Sources */,
+				C01D8CD92461A774008E7151 /* UsingURLComponents.swift in Sources */,
+				C01D8CD02461A2C1008E7151 /* ServiceForUserManagement.swift in Sources */,
+				C01D8CE22461B34A008E7151 /* NewUser.swift in Sources */,
+				C01D8CDF2461AFFD008E7151 /* HoxyMeTooAPI.swift in Sources */,
 				C01D8C91246159B2008E7151 /* AppDelegate.swift in Sources */,
 				C01D8C93246159B2008E7151 /* SceneDelegate.swift in Sources */,
 			);
