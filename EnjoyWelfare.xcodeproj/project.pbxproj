@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		C01D8C91246159B2008E7151 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01D8C90246159B2008E7151 /* AppDelegate.swift */; };
 		C01D8C93246159B2008E7151 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01D8C92246159B2008E7151 /* SceneDelegate.swift */; };
-		C01D8C95246159B2008E7151 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01D8C94246159B2008E7151 /* ViewController.swift */; };
 		C01D8C98246159B2008E7151 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C01D8C96246159B2008E7151 /* Main.storyboard */; };
 		C01D8C9B246159B2008E7151 /* EnjoyWelfare.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C01D8C99246159B2008E7151 /* EnjoyWelfare.xcdatamodeld */; };
 		C01D8C9D246159B8008E7151 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C01D8C9C246159B8008E7151 /* Assets.xcassets */; };
 		C01D8CA0246159B8008E7151 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C01D8C9E246159B8008E7151 /* LaunchScreen.storyboard */; };
 		C01D8CAB246159B9008E7151 /* EnjoyWelfareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01D8CAA246159B9008E7151 /* EnjoyWelfareTests.swift */; };
 		C01D8CB6246159B9008E7151 /* EnjoyWelfareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01D8CB5246159B9008E7151 /* EnjoyWelfareUITests.swift */; };
+		C01D8CCD246188DA008E7151 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01D8CCC246188DA008E7151 /* SignInViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,6 @@
 		C01D8C8D246159B2008E7151 /* EnjoyWelfare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnjoyWelfare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C01D8C90246159B2008E7151 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C01D8C92246159B2008E7151 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C01D8C94246159B2008E7151 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C01D8C97246159B2008E7151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C01D8C9A246159B2008E7151 /* EnjoyWelfare.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EnjoyWelfare.xcdatamodel; sourceTree = "<group>"; };
 		C01D8C9C246159B8008E7151 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +50,8 @@
 		C01D8CB1246159B9008E7151 /* EnjoyWelfareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnjoyWelfareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C01D8CB5246159B9008E7151 /* EnjoyWelfareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnjoyWelfareUITests.swift; sourceTree = "<group>"; };
 		C01D8CB7246159B9008E7151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C01D8CC324617857008E7151 /* EnjoyWelfare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EnjoyWelfare.entitlements; sourceTree = "<group>"; };
+		C01D8CCC246188DA008E7151 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +102,10 @@
 		C01D8C8F246159B2008E7151 /* EnjoyWelfare */ = {
 			isa = PBXGroup;
 			children = (
+				C01D8CCA24618858008E7151 /* ManagementUser */,
+				C01D8CC324617857008E7151 /* EnjoyWelfare.entitlements */,
 				C01D8C90246159B2008E7151 /* AppDelegate.swift */,
 				C01D8C92246159B2008E7151 /* SceneDelegate.swift */,
-				C01D8C94246159B2008E7151 /* ViewController.swift */,
 				C01D8C96246159B2008E7151 /* Main.storyboard */,
 				C01D8C9C246159B8008E7151 /* Assets.xcassets */,
 				C01D8C9E246159B8008E7151 /* LaunchScreen.storyboard */,
@@ -129,6 +131,22 @@
 				C01D8CB7246159B9008E7151 /* Info.plist */,
 			);
 			path = EnjoyWelfareUITests;
+			sourceTree = "<group>";
+		};
+		C01D8CCA24618858008E7151 /* ManagementUser */ = {
+			isa = PBXGroup;
+			children = (
+				C01D8CCB24618888008E7151 /* SignIn */,
+			);
+			path = ManagementUser;
+			sourceTree = "<group>";
+		};
+		C01D8CCB24618888008E7151 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				C01D8CCC246188DA008E7151 /* SignInViewController.swift */,
+			);
+			path = SignIn;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,8 +280,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C01D8CCD246188DA008E7151 /* SignInViewController.swift in Sources */,
 				C01D8C9B246159B2008E7151 /* EnjoyWelfare.xcdatamodeld in Sources */,
-				C01D8C95246159B2008E7151 /* ViewController.swift in Sources */,
 				C01D8C91246159B2008E7151 /* AppDelegate.swift in Sources */,
 				C01D8C93246159B2008E7151 /* SceneDelegate.swift in Sources */,
 			);
@@ -438,9 +456,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = EnjoyWelfare/EnjoyWelfare.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 93P8MMPUWH;
 				INFOPLIST_FILE = EnjoyWelfare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -448,7 +468,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.GSThecar.EnjoyWelfare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -456,9 +476,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = EnjoyWelfare/EnjoyWelfare.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 93P8MMPUWH;
 				INFOPLIST_FILE = EnjoyWelfare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -466,7 +488,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.GSThecar.EnjoyWelfare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
